@@ -20,6 +20,8 @@ namespace Variable
             }
             int currentNum = previousNum + nextNum;
             Console.WriteLine(currentNum);
+            Console.WriteLine("Hello World");
+
             
             previousNum = nextNum;
             nextNum= currentNum;
