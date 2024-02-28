@@ -12,7 +12,7 @@ namespace Variable
 
     internal class Program
     {
-        void GenerateFibonacci(int previousNum,int nextNum,int lastNum)
+        void GenerateFibonacci(int previousNum, int nextNum, int lastNum)
         {
             if (nextNum >= lastNum)
             {
@@ -22,10 +22,12 @@ namespace Variable
             Console.WriteLine(currentNum);
             Console.WriteLine("Hello World");
 
-            
+            Console.WriteLine("Hello World 2");
+
+
             previousNum = nextNum;
-            nextNum= currentNum;
-           GenerateFibonacci(previousNum,nextNum,lastNum);
+            nextNum = currentNum;
+            GenerateFibonacci(previousNum, nextNum, lastNum);
             Console.ReadLine();
 
         }
@@ -33,16 +35,16 @@ namespace Variable
         static void Main(string[] args)
         {
             Console.WriteLine("Enter a Number until you want a fubonacci series : ");
-            int lastNum=Convert.ToInt32(Console.ReadLine());
+            int lastNum = Convert.ToInt32(Console.ReadLine());
             int previousNum = 1;
             int nextNum = 1;
             Program program = new Program();
             Console.WriteLine(previousNum);
             Console.WriteLine(nextNum);
 
-            program.GenerateFibonacci(previousNum,nextNum,lastNum);
-                
-           
+            program.GenerateFibonacci(previousNum, nextNum, lastNum);
+
+
         }
     }
 }
